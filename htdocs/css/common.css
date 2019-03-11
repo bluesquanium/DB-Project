@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* reset */
+* {margin:0; padding:0; word-break:keep-all; box-sizing:border-box; font-family:"Apple SD Gothic Neo",Helvetica,arial,"나눔고딕","Nanum Gothic", "맑은 고딕", "Malgun Gothic", "돋움",Dotum,Tahoma,Geneva,sans-serif;}
+ol,ul {list-style:none;}
+a {text-decoration:none; color:#222;}
+img {border:0;}
+body {font:14px/2.2 'NanumGothic'; color:#222;}
+strong {font-family:'NanumGothicBold'; font-weight:normal;}
+
+fieldset {border:0;}
+article, aside, hgroup, header, footer, figure, figcaption, nav, section {display:block;}
+/* //reset */
+
+/* 폰트 */
+@font-face {
+     font-family:'NanumGothic';
+     font-weight:normal;
+     font-style:normal;
+     src: url('/images/font/NanumGothic.eot'); /*IE9 호환성 보기*/
+     src: local('NanumGothic'), 
+          url('/images/font/NanumGothic.eot?#iefix') format('embedded-opentype'), /*IE 6-8*/
+          url('/images/font/NanumGothic.woff') format('woff'), /*표준 브라우저*/
+          url('/images/font/NanumGothic.ttf') format('truetype');     
+}
+
+@font-face {
+     font-family:'NanumGothicBold';
+     font-weight:normal;
+     font-style:normal;
+     src: url('/images/font/NanumGothicBold.eot'); /*IE9 호환성 보기*/
+     src: local('NanumGothicBold'), 
+          url('/images/font/NanumGothicBold.eot?#iefix') format('embedded-opentype'), /*IE 6-8*/
+          url('/images/font/NanumGothicBold.woff') format('woff'), /*표준 브라우저*/
+          url('/images/font/NanumGothicBold.ttf') format('truetype');     
+}
+/* //폰트 */
+
+/* 레이아웃 */
+header {position:fixed; top:0; left:0; width:100%; z-index:100;}
+footer {position:relative; clear:both; width:100%;}
+/* //레이아웃 */
+
+/* Skip Navigation */
+#quick_skip_menu {position:relative; z-index:2147483647;}
+#quick_skip_menu a {position:absolute; top:-10000px; left:50%; width:200px; height:80px; margin-left:-100px; background:#00afa0; text-align:center;}
+#quick_skip_menu a:active,#quick_skip_menu a:focus {top:0; text-decoration:none; cursor:pointer; zoom:1;}
+#quick_skip_menu span {display:block; font-size:1em; line-height:40px; color:#fff;}
+/* //Skip Navigation */
+
+/* 기타 */
+.clear {clear:both;}
+
+.hanbit_edit_view {line-height:inherit !important;}
+.hanbit_edit_view a {color:#00a79b;}
+.hanbit_edit_view p a {color:#00a79b;}
+.hanbit_edit_view a:hover {text-decoration:underline;}
+.hanbit_edit_view p {/*font-size:initial;*/ line-height:170% !important;}
+.hanbit_edit_view div {/*font-size:initial;*/ line-height:170% !important;}
+.hanbit_edit_view blockquote {/*font-size:initial;*/ line-height:170% !important;}
+.hanbit_edit_view ol {list-style:decimal !important; padding:20px !important; margin:0 20px !important;}
+.hanbit_edit_view ol li {padding-bottom:10px !important; list-style:decimal !important; line-height:170% !important;}
+.hanbit_edit_view ul {list-style:outside !important; padding:20px !important; margin:0 20px !important; border:0 !important;}
+.hanbit_edit_view ul li {padding-bottom:10px !important; list-style:outside !important; line-height:170% !important;}
+
+.foot_download_btn a {display:block; position:fixed; bottom:20px; right:21px; width:134px; height:46px; padding:0 0 0 12px; background:#00afa0 url(/images/common/foot_download_icon.png) no-repeat 22px center; background-size:19px 19px; -moz-border-radius:46px; -khtml-border-radius:46px; -webkit-border-radius:46px; border-radius:46px; font-size:16px; line-height:46px; font-family:'NanumGothicBold'; color:#fff; text-align:center;}
+.foot_download_btn a:hover {background:#009381 url(/images/common/foot_download_icon.png) no-repeat 22px center;}
+.foot_make_btn a {width:204px !important; padding:0 0 0 22px !important; background:#e60012 url(/images/common/foot_make_icon.png) no-repeat 22px center !important; background-size:16px 16px; font-size:13px !important;}
+.foot_make_btn a:hover {background:#bc000f url(/images/common/foot_make_icon.png) no-repeat 22px center !important;}
+/* //기타 */
+
+/* 공통 버튼 */
+.btn_sample_buy {clear:both; width:100%; height:60px; padding:0; margin:10px 0 0 0; background:#00cc99; border:1px solid #ccc; border-radius:3px; -moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; font-family:'NanumGothicBold'; font-size:18px; color:#fff; cursor:pointer; transition:all .2s;}
